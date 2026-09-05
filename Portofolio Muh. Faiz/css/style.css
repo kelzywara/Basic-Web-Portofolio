@@ -1,0 +1,415 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Betania+Patmos&display=swap');
+
+
+html,
+body {
+    margin: 0px;
+    padding: 0px;
+    font-size: 16px;
+     font-family: "Montserrat", sans-serif;
+}
+.wrapper {
+    width: 1024px;
+margin:auto;
+padding: 3px 0px 3px 0px;
+}
+
+
+/* menu */
+
+nav { 
+    background-color:#BDD2B6;
+    color :white
+    position: sticky;
+    top: 0;
+
+}
+nav > .wrapper {
+    display: flex;
+    justify-content: space-between; 
+      font-size: 1.2rem;
+      align-items: center;   
+}
+
+.menu {
+    width: 50%;  
+}
+
+.menu > ul {
+    display:flex;
+    list-style-type: none;
+    margin: 0px;
+    padding: 0px;
+    justify-content: space-between;
+}
+
+.menu > ul > li > a {
+    text-decoration: none;
+    color: white;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+.logo > img {
+    height: 100px;
+}
+
+/* hero jumbotron */
+header {
+    background: url(../images/villabaligacor.jpg);
+    height: 100vh;
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position:relative
+    
+ }
+ .header-opacity {
+   background-color:#393E46;
+   width: 100%;
+   height: 100%;
+   opacity: 0.7;    
+   position:absolute;
+   top:0;
+   left:0;
+ }
+ .header-jumbotron {
+   position: absolute;
+   top: 0;
+   left: 0;
+   display: flex;
+   width: 100%;
+   height: 100%;
+   justify-content: center;
+   align-items: center;
+   flex-direction: column;
+   text-align: center;
+ }
+ .header-jumbotron > h4 {
+   color: white;
+   font-size: 2rem;
+   margin: 0px;
+   padding: 0px;
+   font-family: "Betania Patmos", cursive;
+   letter-spacing: 3px;
+   text-shadow: 0px 0px 4px black;
+ }
+ .header-jumbotron > h5 {
+    color: white;
+    margin: 0px;
+    padding: 5px;
+    font-size: 3.5rem;
+    line-height: 4rem;
+    text-transform: uppercase;
+ }
+ .header-jumbotron > p {
+    padding: 5px;
+    margin: 0px;
+    color: white;
+ }
+
+ a {
+    text-decoration: none;
+    color:#333;
+    text-shadow:none
+ }
+
+.button {
+    display: inline-block;
+    background-color: transparent;
+    color: #ffffff;
+    padding: 14px 40px;
+    margin-top: 24px;
+    border: 1px solid #ffffff;
+    border-radius: 2px;
+    font-size: 14px;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+.button:hover {
+    background-color: #ffffff;
+    color: #1a1a1a;
+}
+ 
+/*
+* statistic
+*/
+#statistic {
+  background-color: #798777
+}
+
+#statistic > .wrapper{
+    color: #ffffff;
+    font-family: "Montserrat", sans-serif;
+}
+
+#statistic > .wrapper {
+    padding: 50px;
+    width: 80%;
+    display: flex;
+    justify-content: space-evenly;
+    
+}
+
+#statistic > .wrapper > div {
+text-align: center;
+}
+
+#statistic > .wrapper > div > p {
+    font-size: 3.5rem;
+    margin: 0px;
+    padding: 0px;
+}
+
+#statistic > .wrapper > div > p > i {
+    margin-right: 10px;
+     font-size: 3.5rem;
+}
+
+#statistic > .wrapper > div > small {
+    font-size: 1.5rem;
+}
+
+/*
+* premium privilege
+*/
+#premium-privilege {
+    background-color:#BDD2B6;
+    color: #ffffff;
+}
+
+#premium-privilege > .wrapper {
+  padding: 50px 0px 50px 0px;  
+}
+
+#premium-privilege > .wrapper > h4 {
+    text-align: center;
+    font-size: 2.8rem;
+    font-family: "Montserrat", sans-serif;
+    margin: 0;
+}
+
+#premium-privilege > .wrapper > h4 > span {
+    color: #FBC02D;
+}
+
+#premium-privilege > .wrapper > p {
+    text-align: center;
+    margin: 0px;
+    padding: 0px;
+    margin-bottom: 50px;
+}
+.grid {
+    display: grid;
+    grid-template-columns: 30% 30% 30%;
+    grid-gap: 50px;
+}
+.grid > .item {
+    border: 1px solid #666;
+    background-color: #798777;
+    border-radius: 5px;
+    position: relative;
+}
+
+.grid > .item > img {
+    width: 15%;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
+.grid > .item > .item-detail {
+    padding: 30px;
+    font-size: 1.3rem;
+    font-weight: bold;
+    width: 70%;
+}
+.grid > .item > .item-detail > p {
+    margin: 0 0 16px 0;
+} 
+
+.grid > .item > .item-detail > div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-weight: bold;
+        margin-top: 16px;
+}
+
+.grid > .item > .item-detail > div > small {
+    color: #ccc;
+    font-size: 1rem;
+    font-style: italic;
+}
+
+.grid > .item > .item-detail > div > a {
+    font-size: 0.8rem;
+    padding: 8px 16px;
+}
+
+/*
+* about company
+*/
+
+#about-company {
+    background-color:#EBEDE3;
+    color: #333;
+}
+
+#about-company > .wrapper {
+  padding: 50px 0px 50px 0px;  
+}
+
+#about-company > .wrapper > h4 {
+    text-align: center;
+    font-size: 2.8rem;
+    font-family: "Montserrat", sans-serif;
+    margin: 0;
+}
+
+#about-company > .wrapper > p {
+    text-align: center;
+    margin: 0px;
+    padding: 0px;
+    margin-bottom: 50px;
+}
+
+#about-company > .wrapper > div {
+    display: flex;
+    width: 70%;
+    margin: auto;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+#about-company > .wrapper > div > .foto {
+width: 30%;
+min-width: 0;
+}
+
+#about-company > .wrapper > div > .foto img {
+    max-width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+#about-company > .wrapper > div > .desc {
+   width: 70%; 
+   padding: 20px;
+   margin: 10px;
+   background-color: #ffffff;
+   border-radius: 10px;
+}
+
+#about-company > .wrapper > div > .desc > p {
+    margin: 0px 0px 10px 0px;
+    font-size: 1.3rem;
+    line-height: 1.9rem;
+}
+
+#about-company > .wrapper > div > .desc > .social {
+ display: flex;   
+ width: 30%;
+ justify-content: space-between;
+ font-size: 1.3rem;
+}
+
+#about-company > .wrapper > div > .desc > .social > a {
+    color: #66A3BF;
+}
+
+/*
+* free privilege
+*/
+#free-privilege {
+    background-color: #798777;
+    
+}
+
+#free-privilege {
+    background-color:#798777;
+    color: #333;
+}
+
+#free-privilege > .wrapper {
+  padding: 50px 0px 50px 0px;  
+}
+
+#free-privilege > .wrapper > h4 {
+    text-align: center;
+    font-size: 2.8rem;
+    font-family: "Montserrat", sans-serif;
+    margin: 0;
+}
+
+#free-privilege > .wrapper > h4 > span {
+    color: #FBC02D;
+}
+
+#free-privilege > .wrapper > p {
+    text-align: center;
+    margin: 0px;
+    padding: 0px;
+    margin-bottom: 50px;
+}
+
+#free-privilege > .wrapper > .grid > .item {
+    background-color: #ccc;
+    margin: 0px;
+    padding: 0px;
+}
+
+#free-privilege > .wrapper > .grid > .item > .item-detail {
+    padding: 0px;
+    margin: 0px;
+    font-size: 1.4rem;
+    width: 100%;
+}
+#free-privilege > .wrapper > .grid > .item > .item-detail > img {
+    width: 100%;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
+#free-privilege > .wrapper > .grid > .item > .item-detail > div {
+    padding: 10px 20px 10px 20px;
+}
+
+/*
+* copyright
+*/
+footer {
+    background-color: #BDD2B6;
+    color: #fff;
+    text-align: center;
+}
+footer > .wrapper {
+    padding: 30px 0px 30px 0px;
+}
+
+/*
+* 1024, 900, 768, 600, 450
+*/
+@media only screen and (max-width: 1024px) {
+    .wrapper {
+        width: 90%;
+    }
+}
+
+@media only screen and (max-width: 900px) {
+   #statistic > .wrapper > div > p {
+    font-size: 2.5rem;
+    margin: 0px;
+    padding: 0px;
+}
+ 
+#statistic > .wrapper > div > small 
+font-size: 1rem;
+}
+
